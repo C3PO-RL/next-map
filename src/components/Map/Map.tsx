@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css";
 import styles from "./Map.module.css";
+import MapPopup from "./components/MapPopup/MapPopup";
 
 interface MapProps {
   center: [number, number];
@@ -45,8 +46,7 @@ const Map: React.FC<MapProps> = ({ center, zoom }) => {
               return (
                 <Marker key={Country} position={Coordinates}>
                   <Popup className="w-[300px] h-[150px]">
-                    <p className="text-[14px]">name: {Country}</p>
-                    <p className="text-[14px]">ISO: {ISOCode}</p>
+                    <MapPopup ISOCode={ISOCode} />
                   </Popup>
                 </Marker>
               );
