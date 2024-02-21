@@ -38,7 +38,7 @@ const MapPopup: React.FC<MapPopupProps> = ({ ISOCode }) => {
   }, [ISOCode, data]);
   console.log(data, loading);
 
-  return <div>{data && data[0].name}</div>;
+  return <div>{data && data[0]?.name}</div>;
 };
 
 export default MapPopup;
