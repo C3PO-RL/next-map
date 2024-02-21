@@ -1,0 +1,82 @@
+{
+  "countries": [
+    {
+      "Country": "United States",
+      "ISOCode": "US",
+      "Latitude": 37.0902,
+      "Longitude": -95.5022
+    },
+    {
+      "Country": "Canada",
+      "ISOCode": "CA",
+      "Latitude": 53.0,
+      "Longitude": -123.0
+    },
+    {
+      "Country": "Mexico",
+      "ISOCode": "MX",
+      "Latitude": 23.0,
+      "Longitude": -102.0
+    },
+    {
+      "Country": "Brazil",
+      "ISOCode": "BR",
+      "Latitude": -23.0,
+      "Longitude": -55.0
+    },
+    {
+      "Country": "Argentina",
+      "ISOCode": "AR",
+      "Latitude": -32.0,
+      "Longitude": -68.0
+    },
+    {
+      "Country": "Chile",
+      "ISOCode": "CL",
+      "Latitude": -33.0,
+      "Longitude": -70.0
+    },
+    {
+      "Country": "Colombia",
+      "ISOCode": "CO",
+      "Latitude": 10.0,
+      "Longitude": -72.0
+    },
+    {
+      "Country": "Peru",
+      "ISOCode": "PE",
+      "Latitude": -12.0,
+      "Longitude": -77.0
+    },
+    {
+      "Country": "Ecuador",
+      "ISOCode": "EC",
+      "Latitude": -1.0,
+      "Longitude": -79.0
+    },
+    {
+      "Country": "Venezuela",
+      "ISOCode": "VE",
+      "Latitude": 7.0,
+      "Longitude": -66.0
+    },
+    {
+      "Country": "Guyana",
+      "ISOCode": "GY",
+      "Latitude": 6.0,
+      "Longitude": -58.0
+    },
+    {
+      "Country": "Suriname",
+      "ISOCode": "SR",
+      "Latitude": 6.0,
+      "Longitude": -55.0
+    },
+    {
+      "Country": "French Guiana",
+      "ISOCode": "GF",
+      "Latitude": 4.0,
+      "Longitude": -53.0
+    }
+  ]
+}
