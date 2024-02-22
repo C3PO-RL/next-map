@@ -19,7 +19,7 @@ const getCountryData = async (ISOCode: string) => {
 };
 const MapPopup: React.FC<MapPopupProps> = ({ ISOCode }) => {
   const [data, setData] = useState<any>([]);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const getInfo = async () => {
@@ -38,7 +38,22 @@ const MapPopup: React.FC<MapPopupProps> = ({ ISOCode }) => {
   }, [ISOCode, data]);
   console.log(data, loading);
 
-  return <div>{data && data[0]?.name}</div>;
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  return (
+    <div className="grid grid-cols-2 gap-2">
+      <div className="flex flex-col">
+        <p>Flag: {data[0]?.emoji}</p>
+        <p>Name: {data[0]?.name}</p>
+      </div>
+      <div className="flex flex-col">
+        <p>Capital: {data[0]?.capital}</p>
+        <p>Currency: {data[0]?.currency}</p>
+      </div>
+    </div>
+  );
 };
 
 export default MapPopup;
