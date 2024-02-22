@@ -24,7 +24,7 @@ const MapPopup: React.FC<MapPopupProps> = ({ ISOCode }) => {
   useEffect(() => {
     const getInfo = async () => {
       const { loading, data } = await getCountryData(ISOCode);
-      console.log(data, loading);
+
       if (loading) {
         setLoading(true);
       }
@@ -36,7 +36,6 @@ const MapPopup: React.FC<MapPopupProps> = ({ ISOCode }) => {
 
     getInfo();
   }, [ISOCode, data]);
-  console.log(data, loading);
 
   if (loading) {
     return <p>Loading...</p>;
